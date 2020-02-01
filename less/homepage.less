@@ -1,5 +1,30 @@
 body {
+  max-width: 100%;
+  width: 100%;
   .container {
-    
+    .flex(column, space-between, space-evenly);
+    width: 100%;
+    // height: 100vh;
+
+    .banner-img {
+      width: 100%;
+      z-index: -5;
+    }
+    #banner {
+      width: 100%;
+      height: 50rem;
+      // .flex(column, center, center);
+      background-attachment: scroll, fixed;
+      background-color: #666;
+      background-image: url(/img/karsten-wurth-karsten-wuerth-RybwUAJ6EMA-unsplash.jpg);
+      background-position: bottom center, center center;
+      background-repeat: no-repeat;
+      background-size: cover;
+
+      .banner-motto {
+        .flex(column, center, center);
+        margin-top: 10%;
+      }
+    }
   }
 }

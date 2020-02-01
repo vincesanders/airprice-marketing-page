@@ -129,16 +129,115 @@ table {
 * {
   box-sizing: border-box;
 }
+html {
+  font-size: 62.5%;
+}
+html,
+body {
+  font-family: "Roboto", sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Indie Flower", cursive;
+  margin: 4% 0;
+  padding: 0;
+}
+h1 {
+  font-size: 4rem;
+}
+h2 {
+  font-size: 3.2rem;
+  padding-bottom: 1%;
+}
+h4 {
+  font-size: 2.5rem;
+  padding-bottom: 1%;
+}
+p {
+  line-height: 1.5;
+  font-size: 1.6rem;
+  padding-bottom: 10px;
+}
 .container {
   max-width: 100%;
-  max-height: 100% ;
+  max-height: 100%;
   width: 100%;
   margin: 0;
 }
-.container .nav-container .nav-title {
+.container .nav-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 5rem;
+  padding: 0 2%;
+}
+.container .nav-container .nav-left {
+  width: 15rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+.container .nav-container .nav-left .nav-title {
+  width: 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   color: red;
   font-size: 2rem;
+  margin: 0, 5%;
 }
-.container .nav-container .links {
+.container .nav-container .links a {
+  font-size: 1.6rem;
+  color: black;
   text-decoration: none;
+}
+.container .nav-container .links button {
+  width: 120px;
+  height: 3.2rem;
+  color: black;
+  background-color: transparent;
+  border: 2px solid #e5e5e5;
+  border-radius: 6px;
+  text-align: center;
+  text-decoration: none;
+  white-space: nowrap;
+  cursor: pointer;
+}
+body {
+  max-width: 100%;
+  width: 100%;
+}
+body .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: space-evenly;
+  width: 100%;
+}
+body .container .banner-img {
+  width: 100%;
+  z-index: -5;
+}
+body .container #banner {
+  width: 100%;
+  height: 50rem;
+  background-attachment: scroll, fixed;
+  background-color: #666;
+  background-image: url(/img/karsten-wurth-karsten-wuerth-RybwUAJ6EMA-unsplash.jpg);
+  background-position: bottom center, center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+body .container #banner .banner-motto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10%;
 }
