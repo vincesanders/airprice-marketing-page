@@ -174,16 +174,10 @@ p {
   align-items: center;
   width: 100%;
   height: 5rem;
-  padding: 0 2%;
+  padding: 0 2rem;
+  z-index: 2;
 }
 .container .nav-container .nav-left {
-  width: 15rem;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: center;
-}
-.container .nav-container .nav-left .nav-title {
   width: 10rem;
   display: flex;
   justify-content: center;
@@ -192,12 +186,25 @@ p {
   font-size: 2rem;
   margin: 0, 5%;
 }
-.container .nav-container .links a {
+.container .nav-container .nav-left i {
+  font-size: 3rem;
+  color: black;
+  margin-right: 3%;
+}
+.container .nav-container .nav-right {
+  width: 15rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+.container .nav-container .nav-right a {
   font-size: 1.6rem;
   color: black;
   text-decoration: none;
 }
-.container .nav-container .links button {
+.container .nav-container .nav-right button {
+  margin-left: 8%;
   width: 120px;
   height: 3.2rem;
   color: black;
@@ -233,11 +240,35 @@ body .container #banner {
   background-position: bottom center, center center;
   background-repeat: no-repeat;
   background-size: cover;
+  box-shadow: 0px 5px 10px 4px #3a3a3a;
 }
 body .container #banner .banner-motto {
+  color: white;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   margin-top: 10%;
+}
+body .container #banner .banner-motto .banner-button {
+  width: 150px;
+  height: 50px;
+  color: black;
+  background-color: transparent;
+  border: 2px solid #e5e5e5;
+  border-radius: 6px;
+  text-align: center;
+  text-decoration: none;
+  white-space: nowrap;
+  cursor: pointer;
+  background-color: white;
+}
+body .container #banner .banner-motto .banner-button a {
+  font-size: 2rem;
+  text-decoration: none;
+  color: black;
+}
+body .container .middle-container {
+  width: 100%;
+  padding: 0 5%;
 }

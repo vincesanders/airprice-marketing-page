@@ -7,18 +7,16 @@
   align-items: @align;
 }
 
-.button() {
-  // background-color: rgb(0, 0, 0, 0.1);
-  // border: 1px solid black;
-  // border-radius: 6px;
-  // color: #ffffff;
-  // cursor: pointer;
-  // display: inline-block;
-  // font-weight: 400;
-  // height: 1em;
-  // line-height: 3em;
-  // padding: 0 2em;
-  // text-align: center;
-  // text-decoration: none;
-  // white-space: nowrap;
+.button(@width, @height) {
+  width: @width;
+  height: @height;
+  color: black;
+  background-color: transparent;
+  border: 2px solid #e5e5e5;
+  border-radius: 6px;
+  text-decoration: none;
+  text-align: center;
+  text-decoration: none;
+  white-space: nowrap;
+  cursor: pointer;
 }
