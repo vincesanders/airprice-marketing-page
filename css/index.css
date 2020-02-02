@@ -182,30 +182,34 @@ p {
   z-index: 2;
 }
 .container .nav-container .nav-left {
-  width: 10rem;
+  width: 15rem;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
+}
+.container .nav-container .nav-left span {
   color: red;
-  font-size: 2rem;
-  margin: 0, 5%;
+  font-size: 2.5rem;
 }
 .container .nav-container .nav-left i {
   font-size: 3rem;
   color: black;
-  margin-right: 3%;
 }
 .container .nav-container .nav-right {
-  width: 15rem;
+  width: 25rem;
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
+  justify-content: space-around;
   align-items: center;
 }
 .container .nav-container .nav-right a {
   font-size: 1.6rem;
   color: black;
   text-decoration: none;
+  text-align: center;
+}
+.container .nav-container .nav-right .login {
+  margin-left: 1rem;
 }
 .container .nav-container .nav-right button {
   margin-left: 8%;
@@ -313,17 +317,46 @@ body .container .middle-container {
   justify-content: center;
   align-items: center;
   width: 100%;
+  max-width: 100%;
 }
 body .container .middle-container .middle-card-large {
   transform: translateY(-10rem);
   background-color: white;
   width: 90%;
   height: 100rem;
-  border: 1px solid black;
   border-radius: 1.5rem;
-  padding: 2rem 5rem;
+  padding: 2rem 4rem;
+  box-shadow: 0 0.7px 4.1px -10px rgba(0, 0, 0, 0.04), 0 1.5px 10.4px -10px rgba(0, 0, 0, 0.052), 0 2.6px 21.3px -10px rgba(0, 0, 0, 0.058), 0 4.3px 43.8px -10px rgba(0, 0, 0, 0.069), 0 10px 120px -10px rgba(0, 0, 0, 0.11);
 }
-body .container .middle-container .middle-image {
+body .container .middle-container .middle-card-large .lead-start {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem 0;
+}
+body .container .middle-container .middle-card-large .lead-start div {
+  margin-right: 5%;
+}
+body .container .middle-container .middle-card-large .lead-start .middle-img {
+  max-width: 100%;
+  height: auto;
+  width: 49%;
+  border-radius: 8px;
+}
+body .container .middle-container .middle-card-large .lead-mid {
   width: 100%;
-  height: 30vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 5%;
+}
+body .container .middle-container .middle-card-large .lead-mid .lead-left {
+  width: 45%;
+  margin: 2rem 0;
+}
+body .container .middle-container .middle-card-large .lead-mid .lead-right {
+  width: 45%;
+  margin: 2rem 0;
 }
