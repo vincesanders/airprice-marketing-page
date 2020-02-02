@@ -7,16 +7,21 @@
   align-items: @align;
 }
 
-.button(@width, @height) {
+.button(@width, @height, @color) {
   width: @width;
   height: @height;
-  color: black;
-  background-color: transparent;
-  border: 2px solid #e5e5e5;
+  color: white;
+  background-color: @color;
+  border: 1px solid #169178;
   border-radius: 6px;
   text-decoration: none;
   text-align: center;
   text-decoration: none;
   white-space: nowrap;
   cursor: pointer;
+
+  a {
+    color: white;
+    font-weight: 500;
+  }
 }

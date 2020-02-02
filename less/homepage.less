@@ -1,6 +1,8 @@
 body {
   max-width: 100%;
+  max-height: 100%;
   width: 100%;
+
   .container {
     .flex(column, space-between, space-evenly);
     width: 100%;
@@ -12,29 +14,36 @@ body {
     }
     #banner {
       width: 100%;
-      height: 50rem;
+      height: 500px;
       // .flex(column, center, center);
-      background-attachment: scroll, fixed;
       background-color: #666;
-      background-image: url(/img/karsten-wurth-karsten-wuerth-RybwUAJ6EMA-unsplash.jpg);
-      background-position: bottom center, center center;
+      background-image: url(/img/daniel-dinuzzo-qCjolcMFaLI-edit22.jpg);
+      background-attachment: fixed;
+      background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
-      box-shadow: 0px 5px 10px 4px rgb(58, 58, 58);
+      box-shadow: 0 0.7px 4.1px -10px rgba(0, 0, 0, 0.04),
+        0 1.5px 10.4px -10px rgba(0, 0, 0, 0.052),
+        0 2.6px 21.3px -10px rgba(0, 0, 0, 0.058),
+        0 4.3px 43.8px -10px rgba(0, 0, 0, 0.069),
+        0 10px 120px -10px rgba(0, 0, 0, 0.11);
 
       .banner-motto {
-        color: white;
+        color: black;
         .flex(column, center, center);
-        margin-top: 10%;
+        margin-top: 5%;
+
+        h1 {
+          font-size: 4rem;
+        }
 
         .banner-button {
-          .button(150px, 50px);
-          background-color: white;
+          margin-top: 70%;
+          .button(150px, 50px, @button-color-start);
 
           a {
             font-size: @buttonFont;
             text-decoration: none;
-            color: black;
           }
         }
       }
@@ -45,7 +54,8 @@ body {
       padding: 0 5%;
 
       .middle-image {
-
+        width: 100%;
+        height: 30vh;
       }
     }
   }

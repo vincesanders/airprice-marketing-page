@@ -126,6 +126,13 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Source Sans Pro Regular'), local('SourceSansPro-Regular'), url(https://fonts.gstatic.com/s/sourcesanspro/v13/6xK3dSBYKcSV-LCoeQqfX1RYOo3qOK7g.ttf) format('truetype');
+}
 * {
   box-sizing: border-box;
 }
@@ -134,22 +141,26 @@ html {
 }
 html,
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
 }
 h1,
 h2,
 h3,
 h4,
 h5 {
-  font-family: "Indie Flower", cursive;
-  margin: 4% 0;
+  font-family: "Source Sans Pro", sans-serif;
+  margin: 2% 0;
   padding: 0;
 }
 h1 {
-  font-size: 4rem;
+  font-size: 5rem;
 }
 h2 {
-  font-size: 3.2rem;
+  font-size: 4rem;
+  padding-bottom: 1%;
+}
+h3 {
+  font-size: 3rem;
   padding-bottom: 1%;
 }
 h4 {
@@ -159,13 +170,6 @@ h4 {
 p {
   line-height: 1.5;
   font-size: 1.6rem;
-  padding-bottom: 10px;
-}
-.container {
-  max-width: 100%;
-  max-height: 100%;
-  width: 100%;
-  margin: 0;
 }
 .container .nav-container {
   display: flex;
@@ -207,17 +211,44 @@ p {
   margin-left: 8%;
   width: 120px;
   height: 3.2rem;
-  color: black;
-  background-color: transparent;
-  border: 2px solid #e5e5e5;
+  color: white;
+  background-color: #1cb495;
+  border: 1px solid #169178;
   border-radius: 6px;
   text-align: center;
   text-decoration: none;
   white-space: nowrap;
   cursor: pointer;
 }
+.container .nav-container .nav-right button a {
+  color: white;
+  font-weight: 500;
+}
+.container footer {
+  width: 100%;
+  margin: 5% 0;
+  padding: 0;
+}
+.container footer .footer-container {
+  width: 100%;
+  height: 80%;
+  background-color: #343a40;
+}
+.container footer .footer-container h2 {
+  color: white;
+  text-align: center;
+  font-weight: 100;
+}
+.container footer .footer-container h3 {
+  text-align: center;
+  color: #e2e2e2;
+}
+.container footer .footer-container .copyright {
+  text-align: center;
+}
 body {
   max-width: 100%;
+  max-height: 100%;
   width: 100%;
 }
 body .container {
@@ -233,42 +264,52 @@ body .container .banner-img {
 }
 body .container #banner {
   width: 100%;
-  height: 50rem;
-  background-attachment: scroll, fixed;
+  height: 500px;
   background-color: #666;
-  background-image: url(/img/karsten-wurth-karsten-wuerth-RybwUAJ6EMA-unsplash.jpg);
-  background-position: bottom center, center center;
+  background-image: url(/img/daniel-dinuzzo-qCjolcMFaLI-edit22.jpg);
+  background-attachment: fixed;
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  box-shadow: 0px 5px 10px 4px #3a3a3a;
+  box-shadow: 0 0.7px 4.1px -10px rgba(0, 0, 0, 0.04), 0 1.5px 10.4px -10px rgba(0, 0, 0, 0.052), 0 2.6px 21.3px -10px rgba(0, 0, 0, 0.058), 0 4.3px 43.8px -10px rgba(0, 0, 0, 0.069), 0 10px 120px -10px rgba(0, 0, 0, 0.11);
 }
 body .container #banner .banner-motto {
-  color: white;
+  color: black;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 10%;
+  margin-top: 5%;
+}
+body .container #banner .banner-motto h1 {
+  font-size: 4rem;
 }
 body .container #banner .banner-motto .banner-button {
+  margin-top: 70%;
   width: 150px;
   height: 50px;
-  color: black;
-  background-color: transparent;
-  border: 2px solid #e5e5e5;
+  color: white;
+  background-color: #1cb495;
+  border: 1px solid #169178;
   border-radius: 6px;
   text-align: center;
   text-decoration: none;
   white-space: nowrap;
   cursor: pointer;
-  background-color: white;
+}
+body .container #banner .banner-motto .banner-button a {
+  color: white;
+  font-weight: 500;
 }
 body .container #banner .banner-motto .banner-button a {
   font-size: 2rem;
   text-decoration: none;
-  color: black;
 }
 body .container .middle-container {
   width: 100%;
   padding: 0 5%;
+}
+body .container .middle-container .middle-image {
+  width: 100%;
+  height: 30vh;
 }
