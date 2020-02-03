@@ -325,7 +325,6 @@ body .container .middle-container .middle-card-large {
   transform: translateY(-10rem);
   background-color: white;
   width: 90%;
-  height: 100rem;
   border-radius: 1rem;
   padding: 2rem 4rem;
   box-shadow: 0 0.7px 4.1px -10px rgba(0, 0, 0, 0.04), 0 1.5px 10.4px -10px rgba(0, 0, 0, 0.052), 0 2.6px 21.3px -10px rgba(0, 0, 0, 0.058), 0 4.3px 43.8px -10px rgba(0, 0, 0, 0.069), 0 10px 120px -10px rgba(0, 0, 0, 0.11);
@@ -368,7 +367,7 @@ body .container .middle-container .middle-card-large .lead-mid .lead-left p {
 }
 body .container .middle-container .middle-card-large .lead-mid .lead-left img {
   max-width: 100%;
-  height: 30rem;
+  height: auto;
   width: 100%;
   border-top-left-radius: 1rem;
   border-top-right-radius: 1rem;
@@ -385,7 +384,7 @@ body .container .middle-container .middle-card-large .lead-mid .lead-right p {
 }
 body .container .middle-container .middle-card-large .lead-mid .lead-right img {
   max-width: 100%;
-  height: 30rem;
+  height: auto;
   width: 100%;
   border-top-left-radius: 1rem;
   border-top-right-radius: 1rem;
