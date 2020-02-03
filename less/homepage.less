@@ -51,7 +51,7 @@ body {
       // padding: 0 5%;
 
       .middle-card-large {
-        transform: translateY(-10rem);
+        // transform: translateY(-10rem);
         background-color: white;
         width: 90%;
         // height: 100rem;
@@ -63,7 +63,7 @@ body {
 
         .lead-start {
           .flex(row, space-between, center);
-          margin: 2rem 0;
+          margin-top: 5rem;
 
           div {
             width: 48%;
@@ -83,7 +83,7 @@ body {
         .lead-mid {
           width: 100%;
           .flex(row, space-between, space-between);
-          margin-top: 5%;
+          margin-top: 5rem;
 
           .lead-left {
             width: 48%;
@@ -115,6 +115,32 @@ body {
             img {
               .miniCardImg(auto);
             }
+          }
+        }
+      }
+    }
+
+    .lead-example {
+      .flex(row, space-evenly, space-evenly);
+      box-shadow: @shadow;
+      padding: 4rem 0;
+      .listing-cards {
+        max-width: 100%;
+        width: 20rem;
+        // height: 40rem;
+        border-radius: @border-radius;
+        img {
+          max-width: 100%;
+          width: 100%;
+          height: 20rem;
+          border-radius: @border-radius;
+        }
+
+        .location-price {
+          .flex(row, space-between, sapce-evenly);
+
+          .suggested-price {
+            // margin-left: 8rem;
           }
         }
       }

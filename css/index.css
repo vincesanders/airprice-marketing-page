@@ -322,7 +322,6 @@ body .container .middle-container {
   max-width: 100%;
 }
 body .container .middle-container .middle-card-large {
-  transform: translateY(-10rem);
   background-color: white;
   width: 90%;
   border-radius: 1rem;
@@ -334,7 +333,7 @@ body .container .middle-container .middle-card-large .lead-start {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  margin: 2rem 0;
+  margin-top: 5rem;
 }
 body .container .middle-container .middle-card-large .lead-start div {
   width: 48%;
@@ -353,7 +352,7 @@ body .container .middle-container .middle-card-large .lead-mid {
   flex-direction: row;
   justify-content: space-between;
   align-items: space-between;
-  margin-top: 5%;
+  margin-top: 5rem;
 }
 body .container .middle-container .middle-card-large .lead-mid .lead-left {
   width: 48%;
@@ -388,6 +387,31 @@ body .container .middle-container .middle-card-large .lead-mid .lead-right img {
   width: 100%;
   border-top-left-radius: 1rem;
   border-top-right-radius: 1rem;
+}
+body .container .lead-example {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: space-evenly;
+  box-shadow: 0 0.7px 4.1px -10px rgba(0, 0, 0, 0.04), 0 1.5px 10.4px -10px rgba(0, 0, 0, 0.052), 0 2.6px 21.3px -10px rgba(0, 0, 0, 0.058), 0 4.3px 43.8px -10px rgba(0, 0, 0, 0.069), 0 10px 120px -10px rgba(0, 0, 0, 0.11);
+  padding: 4rem 0;
+}
+body .container .lead-example .listing-cards {
+  max-width: 100%;
+  width: 20rem;
+  border-radius: 1rem;
+}
+body .container .lead-example .listing-cards img {
+  max-width: 100%;
+  width: 100%;
+  height: 20rem;
+  border-radius: 1rem;
+}
+body .container .lead-example .listing-cards .location-price {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: sapce-evenly;
 }
 .awesome-people-container {
   width: 100%;
