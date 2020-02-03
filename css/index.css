@@ -318,6 +318,16 @@ body .container #banner .banner-motto .banner-button a {
   font-size: 2rem;
   text-decoration: none;
 }
+body .container .overspan {
+  margin: 0 5%;
+  width: 90%;
+  height: 5rem;
+  background-color: white;
+  border-top-right-radius: 1rem;
+  border-top-left-radius: 1rem;
+  transform: translateY(-5rem);
+  z-index: 1;
+}
 body .container .middle-container {
   display: flex;
   flex-direction: column;
@@ -327,11 +337,12 @@ body .container .middle-container {
   max-width: 100%;
 }
 body .container .middle-container .middle-card-large {
-  transform: translateY(-10rem);
+  transform: translateY(-5rem);
   background-color: white;
   width: 90%;
-  border-radius: 1rem;
-  padding: 2rem 4rem;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  padding: 0 4rem 2rem 4rem;
   box-shadow: 0 0.7px 4.1px -10px rgba(0, 0, 0, 0.04), 0 1.5px 10.4px -10px rgba(0, 0, 0, 0.052), 0 2.6px 21.3px -10px rgba(0, 0, 0, 0.058), 0 4.3px 43.8px -10px rgba(0, 0, 0, 0.069), 0 10px 120px -10px rgba(0, 0, 0, 0.11);
 }
 body .container .middle-container .middle-card-large .lead-start {
@@ -339,7 +350,6 @@ body .container .middle-container .middle-card-large .lead-start {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  margin-top: 5rem;
 }
 body .container .middle-container .middle-card-large .lead-start div {
   width: 48%;
@@ -349,7 +359,6 @@ body .container .middle-container .middle-card-large .lead-start .middle-img {
   max-width: 100%;
   height: auto;
   width: 48%;
-  box-shadow: 0 0.7px 4.1px -10px rgba(0, 0, 0, 0.04), 0 1.5px 10.4px -10px rgba(0, 0, 0, 0.052), 0 2.6px 21.3px -10px rgba(0, 0, 0, 0.058), 0 4.3px 43.8px -10px rgba(0, 0, 0, 0.069), 0 10px 120px -10px rgba(0, 0, 0, 0.11);
   border-radius: 1rem;
 }
 body .container .middle-container .middle-card-large .lead-mid {
