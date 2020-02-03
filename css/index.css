@@ -272,6 +272,7 @@ body .container .banner-img {
 }
 body .container #banner {
   width: 100%;
+  height: 450px;
   background-color: #666;
   background-image: url(/img/daniel-dinuzzo-qCjolcMFaLI-unsplash.jpg);
   background-attachment: fixed;
