@@ -10,7 +10,17 @@
       src="https://kit.fontawesome.com/c44eed2260.js"
       crossorigin="anonymous"
     ></script>
-    <script src="js/navShrink.js" defer></script>
+    <!-- <script src="js/navShrink.js" defer></script> -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
   </head>
   <body>
     <!-- Container! -->
@@ -19,7 +29,7 @@
         <!-- Nav Container! -->
         <div class="nav-container">
           <div class="nav-left">
-            <i class="fas fa-chart-area fa-3x"></i>
+            <i class="fas fa-chart-area fa-3x" id="logo"></i>
             <span class="nav-title">QuickPrice</span>
           </div>
 
@@ -97,48 +107,50 @@
       </div>
       <!-- Middle-Container! END-->
       <section class="lead-example">
-        <div class="listing-cards">
-          <img src="img/rhema-kallianpur-jbJ-_hw2yag-unsplash.jpg" alt="" />
-          <h4>hotel psycho</h4>
-          <div class="location-price">
-            <p>location - $ <span class="current-price">0</span></p>
-            <p class="suggested-price">
-              $
-              <span class="suggested-price-num">0</span>
-            </p>
+        <div class="scrollbox owl-carousel">
+          <div class="listing-cards">
+            <img src="img/rhema-kallianpur-jbJ-_hw2yag-unsplash.jpg" alt="" />
+            <h4>hotel psycho</h4>
+            <div class="location-price">
+              <p>location - $ <span class="current-price">0</span></p>
+              <p class="suggested-price">
+                $
+                <span class="suggested-price-num">0</span>
+              </p>
+            </div>
           </div>
-        </div>
-        <div class="listing-cards">
-          <img src="img/rhema-kallianpur-jbJ-_hw2yag-unsplash.jpg" alt="" />
-          <h4>hotel psycho</h4>
-          <div class="location-price">
-            <p>location - $ <span class="current-price">0</span></p>
-            <p class="suggested-price">
-              $
-              <span class="suggested-price-num">0</span>
-            </p>
+          <div class="listing-cards">
+            <img src="img/rhema-kallianpur-jbJ-_hw2yag-unsplash.jpg" alt="" />
+            <h4>hotel psycho</h4>
+            <div class="location-price">
+              <p>location - $ <span class="current-price">0</span></p>
+              <p class="suggested-price">
+                $
+                <span class="suggested-price-num">0</span>
+              </p>
+            </div>
           </div>
-        </div>
-        <div class="listing-cards">
-          <img src="img/rhema-kallianpur-jbJ-_hw2yag-unsplash.jpg" alt="" />
-          <h4>hotel psycho</h4>
-          <div class="location-price">
-            <p>location - $ <span class="current-price">0</span></p>
-            <p class="suggested-price">
-              $
-              <span class="suggested-price-num">0</span>
-            </p>
+          <div class="listing-cards">
+            <img src="img/rhema-kallianpur-jbJ-_hw2yag-unsplash.jpg" alt="" />
+            <h4>hotel psycho</h4>
+            <div class="location-price">
+              <p>location - $ <span class="current-price">0</span></p>
+              <p class="suggested-price">
+                $
+                <span class="suggested-price-num">0</span>
+              </p>
+            </div>
           </div>
-        </div>
-        <div class="listing-cards">
-          <img src="img/rhema-kallianpur-jbJ-_hw2yag-unsplash.jpg" alt="" />
-          <h4>hotel psycho</h4>
-          <div class="location-price">
-            <p>location - $ <span class="current-price">0</span></p>
-            <p class="suggested-price">
-              $
-              <span class="suggested-price-num">0</span>
-            </p>
+          <div class="listing-cards">
+            <img src="img/rhema-kallianpur-jbJ-_hw2yag-unsplash.jpg" alt="" />
+            <h4>hotel psycho</h4>
+            <div class="location-price">
+              <p>location - $ <span class="current-price">0</span></p>
+              <p class="suggested-price">
+                $
+                <span class="suggested-price-num">0</span>
+              </p>
+            </div>
           </div>
         </div>
       </section>
@@ -150,7 +162,9 @@
         </div>
         <span class="copyright">Copyright Analytical</span>
       </footer>
+      <!-- Footer! END-->
     </div>
     <!-- Container! END-->
+    <script src="js/scrollExample.js"></script>
   </body>
 </html>

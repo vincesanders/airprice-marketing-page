@@ -3,10 +3,13 @@
     .flex(row, space-between, center);
     width: 100%;
     height: 5rem;
+    transition: 0.4s;
+    position: fixed;
     padding: 0 2rem;
     // border-bottom: 1px solid black;
     // box-shadow: 5px 10px 15px 4px rgb(58, 58, 58);
-    z-index: 2;
+    z-index: 99;
+    background-color: white;
 
     .nav-left {
       width: 15rem;
@@ -19,7 +22,7 @@
         // margin-left: 1.5rem;
       }
 
-      i {
+      #logo {
         font-size: 3rem;
         color: black;
         // margin-left: 1.5rem;
@@ -53,4 +56,9 @@
   position: fixed;
   top: 0;
   width: 100%;
+}
+
+.scrolled-nav {
+  height: 60px !important;
+  line-height: 60px !important;
 }
