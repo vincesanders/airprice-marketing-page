@@ -209,7 +209,7 @@ p {
 }
 .container .nav-container .nav-left .nav-title a {
   text-decoration: none;
-  color: red;
+  color: #d20000;
   font-weight: bold;
   font-size: 3rem;
 }
