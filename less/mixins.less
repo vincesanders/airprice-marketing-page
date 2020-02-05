@@ -1,0 +1,35 @@
+// Mixins
+
+.flex(@dir, @justify, @align) {
+  display: flex;
+  flex-direction: @dir;
+  justify-content: @justify;
+  align-items: @align;
+}
+
+.button(@width, @height, @color) {
+  width: @width;
+  height: @height;
+  color: white;
+  background-color: @color;
+  border: 1px solid #169178;
+  border-radius: 6px;
+  text-decoration: none;
+  text-align: center;
+  text-decoration: none;
+  white-space: nowrap;
+  cursor: pointer;
+
+  a {
+    color: white;
+    font-weight: 500;
+  }
+}
+
+.miniCardImg(@height) {
+  max-width: 100%;
+  height: @height;
+  width: 100%;
+  border-top-left-radius: @border-radius;
+  border-top-right-radius: @border-radius;
+}
