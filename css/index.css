@@ -202,6 +202,7 @@ p {
 .container .nav-container .nav-left #logo {
   font-size: 3rem;
   color: black;
+  width: 25%;
 }
 .container .nav-container .nav-left .nav-title {
   padding-left: 1rem;
@@ -209,6 +210,8 @@ p {
 .container .nav-container .nav-left .nav-title a {
   text-decoration: none;
   color: red;
+  font-weight: bold;
+  font-size: 3rem;
 }
 .container .nav-container .nav-right {
   width: 25rem;
@@ -313,7 +316,7 @@ body .container #banner .banner-motto {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 5%;
+  margin-top: 3%;
 }
 @media (max-width: 500px) {
   body .container #banner .banner-motto {
