@@ -189,10 +189,16 @@ p {
   z-index: 99;
   background-color: white;
 }
+@media (max-width: 500px) {
+  .container .nav-container {
+    padding: 0 1rem;
+  }
+}
 .container .nav-container .nav-left {
   width: 15rem;
   display: flex;
-  justify-content: space-between;
+  flex-direction: row;
+  justify-content: space-around;
   align-items: center;
 }
 .container .nav-container .nav-left span {
@@ -207,11 +213,26 @@ p {
 .container .nav-container .nav-left .nav-title {
   padding-left: 1rem;
 }
+@media (max-width: 500px) {
+  .container .nav-container .nav-left .nav-title {
+    padding-left: 0;
+  }
+}
 .container .nav-container .nav-left .nav-title a {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
   text-decoration: none;
   color: #d20000;
   font-weight: bold;
   font-size: 3rem;
+}
+@media (max-width: 500px) {
+  .container .nav-container .nav-left .nav-title a {
+    font-size: 2rem;
+    padding-right: 1rem;
+  }
 }
 .container .nav-container .nav-right {
   width: 25rem;
