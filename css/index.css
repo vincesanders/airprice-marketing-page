@@ -365,6 +365,7 @@ body .container #banner .banner-motto .slogan {
 }
 body .container #banner .banner-motto .banner-button {
   margin-top: 70%;
+  margin-bottom: 10rem;
   width: 150px;
   height: 50px;
   color: white;
