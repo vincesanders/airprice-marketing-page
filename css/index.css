@@ -619,6 +619,9 @@ body .container .lead-example .listing-cards .location-price .suggested-price-nu
 }
 .awesome-people-container .section-one .player-wrapper .playercards-info {
   color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .awesome-people-container .section-one .player-wrapper .playercards-info a {
   text-decoration: none;
